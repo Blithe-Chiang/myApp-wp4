@@ -13,8 +13,12 @@ const ModalDemo = create(({ name }: { name: string }) => {
         modal.hide()
       }}
     >
-      <Text>hello from modal</Text>
-      <Text>name props: {name}</Text>
+      <View>
+        <Text>hello from modal</Text>
+      </View>
+      <View>
+        <Text>name props: {name}</Text>
+      </View>
     </View>
   )
 });

@@ -1,9 +1,23 @@
-import NiceModal from '@ebay/nice-modal-react'
+/* eslint-disable react-hooks/rules-of-hooks */
+import { NiceModalState, Provider, reducer } from '@ebay/nice-modal-react'
+import { useDidShow } from '@tarojs/taro'
+import { useReducer, useRef } from 'react'
+
+const initialState: NiceModalState = {}
 
 export default function BasePage(Comp: any) {
-  return (props) => (
-    <NiceModal.Provider>
-      <Comp {...props} />
-    </NiceModal.Provider>
-  )
+  return (props) => {
+    const [modals, dispatch] = useReducer(reducer, initialState)
+    const ref = useRef()
+    useDidShow(() => {
+      setTimeout(() => {
+        ref.current?.updateDispatch()
+      }, 0);
+    })
+    return (
+      <Provider ref={ref} dispatch={dispatch} modals={modals} >
+        <Comp {...props} />
+      </Provider>
+    )
+  }
 }

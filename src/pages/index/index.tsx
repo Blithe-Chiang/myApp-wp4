@@ -5,13 +5,10 @@ import { show } from '@ebay/nice-modal-react'
 import BasePage from '@/layout/BasePage'
 import ModalDemo from '@/components/ModalDemo'
 
-export default BasePage(function Index() {
-  useLoad(() => {
-    console.log('Page ....')
-  })
 
+export default BasePage(function Index() {
   const onClick_showModal = () => {
-    show(ModalDemo, { name: 'name props from INDEX' })
+    show(ModalDemo, { name: 'content from INDEX' })
   }
 
   return (
