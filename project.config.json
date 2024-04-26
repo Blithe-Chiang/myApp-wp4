@@ -1,0 +1,36 @@
+{
+  "miniprogramRoot": "dist/",
+  "description": "我的项目",
+  "setting": {
+    "urlCheck": true,
+    "es6": false,
+    "enhance": false,
+    "compileHotReLoad": false,
+    "postcss": false,
+    "minified": false,
+    "babelSetting": {
+      "ignore": [],
+      "disablePlugins": [],
+      "outputPath": ""
+    },
+    "coverView": false,
+    "showShadowRootInWxmlPanel": false,
+    "packNpmRelationList": [],
+    "ignoreUploadUnusedFiles": true,
+    "minifyWXML": false,
+    "minifyWXSS": false
+  },
+  "compileType": "miniprogram",
+  "srcMiniprogramRoot": "dist/",
+  "condition": {},
+  "editorSetting": {
+    "tabIndent": "insertSpaces",
+    "tabSize": 2
+  },
+  "appid": "wx6b7d0dd99107819d",
+  "libVersion": "3.4.3",
+  "packOptions": {
+    "ignore": [],
+    "include": []
+  }
+}
