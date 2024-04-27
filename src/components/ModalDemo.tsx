@@ -1,5 +1,5 @@
 import { View, Text } from '@tarojs/components'
-import { useModal, create } from '@ebay/nice-modal-react'
+import { useModal, create } from 'vfup-nice-modal-react'
 
 const ModalDemo = create(({ name }: { name: string }) => {
   const modal = useModal()

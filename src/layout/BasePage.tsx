@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/rules-of-hooks */
-import { Provider, ProviderHandle } from '@ebay/nice-modal-react'
+import { Provider, ProviderHandle } from 'vfup-nice-modal-react'
 import { useDidShow } from '@tarojs/taro'
 import { useRef } from 'react'
 

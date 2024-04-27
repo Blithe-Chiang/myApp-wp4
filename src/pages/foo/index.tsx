@@ -1,6 +1,6 @@
 import { View, Text } from '@tarojs/components'
 import './index.scss'
-import { show } from '@ebay/nice-modal-react'
+import { show } from 'vfup-nice-modal-react'
 import BasePage from '@/layout/BasePage'
 import ModalDemo from '@/components/ModalDemo'
 
